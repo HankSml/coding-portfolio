@@ -1,3 +1,7 @@
+body {
+    background-color: #7899ba
+    ;
+}
 div {
     display: flex;
     flex-wrap: wrap;
@@ -10,12 +14,35 @@ div {
 .app-card {
     justify-content: center;
 }
+.app-card > div {
+    border: 3px solid #002F6C;
+    margin: 10px;
+    align-items: flex-end;
+    min-width: 50%;
+}
+.app-card-text {
+    max-height: 30%;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 10px;
+    margin-left: 0px;
+    justify-content: end;
+    background-color: #002F6C;
+    text-align: center;
+    padding-inline: 5px 5px;
+    color:seashell;
+}
+.app-card-text > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .first {
     min-width: 100%;
     min-height: 300px;
 }
 .secondary {
     width: 50%;
+    min-height: 300px;
 }
 .app-card img {
     border: 5px blue;
