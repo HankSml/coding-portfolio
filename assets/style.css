@@ -1,0 +1,24 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.app-body {
+    width: 100%;
+    justify-content: center;
+}
+.app-card {
+    justify-content: center;
+}
+.first {
+    min-width: 100%;
+    min-height: 300px;
+}
+.secondary {
+    width: 50%;
+}
+.app-card img {
+    border: 5px blue;
+    max-width: 400px;
+    height: auto;
+}
