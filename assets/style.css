@@ -1,25 +1,50 @@
 /* generic styling */
+* {
+    font-family:  Helvetica, Arial, sans-serif;
+}
 body {
-    background-color: #7899ba;
+    background-color: #778899;
 }
 div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+/* navbar style */
 nav {
-    background-color: black;
+    background-color: #002F6C;
     position: fixed;
     top: 0;
     width: 100%;
     justify-content: right;
     text-align: right;
 }
+.navbar-link {
+    color:black;
+}
+.navbar-link:hover {
+    color:grey;
+}
 li {
     display: inline-flex;
     flex-direction: row;
+    padding-inline: 5px;
 }
-/* class-specific styling */
+/* about me section */
+#about-me {
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+#about-me-img {
+    max-width: 30%;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+#about-me-text {
+    max-width: 65%;
+}
+/* application cards */
 .app-body {
     width: 100%;
     justify-content: center;
@@ -64,7 +89,18 @@ li {
     min-height: 300px;
 }
 .app-card img {
-    border: 5px blue;
     max-width: 400px;
     height: auto;
+}
+/* contact info */
+#contact-me-header {
+    border-right: 4px solid black;
+    min-width: 20%;
+}
+#contact-me-info {
+    justify-content: space-evenly;
+    min-width: 75%;
+}
+#contact-me-info > a {
+    margin: 16px;
 }
