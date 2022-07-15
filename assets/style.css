@@ -1,15 +1,30 @@
+/* generic styling */
 body {
-    background-color: #7899ba
-    ;
+    background-color: #7899ba;
 }
 div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+}
+li {
+    display: inline-flex;
+    flex-direction: row;
+}
+/* class-specific styling */
 .app-body {
     width: 100%;
     justify-content: center;
+    border-top: 3px solid #002F6C;
+    border-bottom: 3px solid #002F6C;
 }
 .app-card {
     justify-content: center;
@@ -18,7 +33,11 @@ div {
     border: 3px solid #002F6C;
     margin: 10px;
     align-items: flex-end;
-    min-width: 50%;
+    min-width: 80%;
+    opacity: 60%;
+}
+.app-card > div:hover {
+    opacity: 100%;
 }
 .app-card-text {
     max-height: 30%;
